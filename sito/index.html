@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BGym - Palestra a Bergamo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0c6da4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-dumbbell"></i> BGym</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#iscrizione">Iscriviti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Benvenuto alla BGym</h2>
+        <h3>Allenati nella palestra migliore di Bergamo </h3>
+        <p> energia, disciplina e passione in un ambiente moderno e motivante.</p>
+        <a href="#iscrizione" class="btn">Inizia ora</a>
+      </div>
+      <img src="img/palestra.jpg" alt="Palestra moderna" class="hero-img">
+    </div>
+  </section>
+
+  <section id="servizi" class="section colored">
+    <h2 class="section-title">I nostri servizi</h2>
+    <div class="services">
+      <div class="service-card">
+        <i class="fas fa-running fa-2x"></i>
+       <a href="corsi.html"><h3>Corsi fitness</h3></a>
+        <img src="img/corsi.jpg"  alt="Corsi fitness" class="service-img">
+        <p>Programmi personalizzati di allenamento e corsi di gruppo per ogni livello.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-apple-alt fa-2x"></i>
+        <a href="nutrizione.html"><h3>Nutrizione</h3></a>
+        <img src="img/nutrizione.jpg"  alt="Nutrizione" class="service-img">
+        <p>Piani alimentari personalizzati con supporto di nutrizionisti esperti.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-hot-tub fa-2x"></i>
+        <a href="wellness.html"><h3>Wellness</h3></a>
+        <img src="img/wellness.jpg"  alt="Wellness" class="service-img">
+        <p>Area relax con sauna, bagno turco e trattamenti rigeneranti.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="iscrizione" class="section">
+    <h2 class="section-title">Iscriviti ora</h2>
+    <form id="formIscrizione" class="form">
+      <input type="text" id="nome" placeholder="Il tuo nome" required />
+      <input type="email" id="email" placeholder="La tua email" required />
+      <select id="corso">
+        <option selected disabled>Scegli un corso</option>
+        <option>Pilates</option>
+        <option>Boxe</option>
+        <option>Zumba</option>
+        <option>Stretch & Mobility</option>
+        <option>Pesi liberi</option>
+      </select>
+      <button type="submit">Invia iscrizione</button>
+    </form>
+    <p id="messaggio"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BGym</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
